@@ -12,9 +12,13 @@ int main(){
     printf("Enter the position at which the number has to be Deleted:");
     scanf("%d", &pos);
     printf("\n array elements are");
-    // loop for Deleting the code from position pos 
+    // loop for Deleting the code from position pos
+    for(i=pos;i<n;i++)
+        {
+            arr[i]=arr[i+1];
+        }
     // CODE HERE
-    // CODE HERE                                  // Update the size of array
+    n=n-1;                                // Update the size of array
     printf("The array after Deletion is:");
     for(i=0; i<n;i++)
     {
